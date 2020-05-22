@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="stilo.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a id="mainSlogan" class="navbar-brand" href="index.html"><span class="font-weight-bold text-uppercase">-Ana
+                Drumond-</span></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-content-start container-fluid px-0">
+                <li class="nav-item pl-5">
+                    <a class="nav-link" href="about.html">Sobre Mim</a>
+                </li>
+                <li class="nav-item pl-5">
+                    <a class="nav-link" href="contact.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 ml-auto mr-0">
+                <img id="mainImage" src="foto-about.jpeg" class="rounded" alt="Responsive image">
+            </div>
+            <div class="col-6">
+                <p id="introText"><strong>Informações sobre mim</strong></p>
+                <p id="introText" class="mt-0"> Tenho 24 anos, sou nascida em Belo Horizonte-MG. Minha família veio toda do interior, de uma cidade chamada Bocaiúva. Que cidadezinha gostosa (e quente). Amo quando consigo ir pra lá, passar tempo com tios, avós, primos, e poder me divertir com eles.</p>
+                <p id="introText" class="mt-0 "> Sou formada em Engenharia Civil e estou me aventurando em um curso bem diferente. Motivo? Me encontrar. Não é fácil começar uma nova faculdade, estudar por mais uns bons anos. Mas temos que correr atrás dos nossos sonhos e desistir deles não pode ser uma opção!</p>
+                <p id="introText" class="mt-0 "> Sou uma pessoa ativa, animada, mas bastante exigente comigo mesma. Quando uma coisa não ocorre como o planejado, a ansiedade só aumenta. Mas a vida é isso, e estou sempre buscando um equilibrio. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $("#mainNavbar ");
+                $nav.toggleClass("scrolled ", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js "></script>
+</body>
+
+</html>
